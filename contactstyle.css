@@ -84,6 +84,12 @@ body{
     text-decoration: none;
     font-size: 20px;
     margin-left: 140px;
+    transition: all 0.3s ease 0s;
+}
+
+.infos a:hover{
+    color: #379237;
+    font-size: 22px;
 }
 
 .infos li{
