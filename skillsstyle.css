@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    height: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav a img{
+    margin-top: 2px;
+    position: absolute;
+    margin-left: 92px;
+    height: 60px;
+    width: 60px;
+}
+
+.nav li{
+    list-style: none;
+    animation: transitionIn 0.75s;
+}
+
+.nav a.listactive{
+    color: #379237;
+    font: 24px;
+    border-bottom: 1px solid #379237;
+}
+
+.nav li a{
+    margin-top: 18px;
+    margin-right: 15px;
+    font-size: 22px;
+    color: white;
+    float: right;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover{
+    font-size: 24px;
+    color: #379237;
+}
+
+.body{
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+
+.body h1{
+    margin-top: 80px;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    animation: borderSlide 0.75s;
+    font-size: 32px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.separator{
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 80px;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+}
+
+.firstitem{
+    float: left;
+    position: relative;
+    margin-left: 475px;
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.firstitem img{
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.firstitem a{
+    color: white;
+    text-decoration: none;
+}
+
+.firstitem h3{
+    cursor: pointer;
+}
+
+.learnmore{
+    position: absolute;
+    bottom: 0;
+    left: 57px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.learnmore a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.learnmore a:hover{
+    font-size: 17px;
+}
+
+.firstitem img:hover{
+    opacity: 0.5;
+}
+
+.firstitem:hover .learnmore{
+    bottom: 90px;
+    opacity: 1;
+}
+
+.firstitem:hover img{
+    opacity: 0.5;
+}
+
+.seconditem{
+    margin-top: 10px;
+    float: left;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.seconditem img{
+    height: 180px;
+    width: 180px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.seconditem a{
+    color: white;
+    text-decoration: none;
+}
+
+.seconditem h3{
+    cursor: pointer;
+}
+
+.learnmore2{
+    position: absolute;
+    bottom: 0;
+    right: 57px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.learnmore2 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.learnmore2 a:hover{
+    font-size: 17px;
+}
+
+.seconditem img:hover{
+    opacity: 0.5;
+}
+
+.seconditem:hover .learnmore2{
+    bottom: 90px;
+    opacity: 1;
+}
+
+.seconditem:hover img{
+    opacity: 0.5;
+}
+
+.separator2{
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 300px;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+}
+
+.thirditem{
+    float: left;
+    margin-left: 375px;
+    margin-bottom: 100px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.thirditem img{
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.thirditem a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.learnmore3{
+    position: absolute;
+    margin-left: 60px;
+    top: 790px;
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.learnmore3 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.learnmore3 a:hover{
+    font-size: 17px;
+}
+
+.thirditem img:hover{
+    opacity: 0.5;
+}
+
+.thirditem:hover .learnmore3{
+    top: 710px;
+    opacity: 1;
+}
+
+.thirditem:hover img{
+    opacity: 0.5;
+}
+
+.fourth{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-top: 11px;
+    text-align: center;
+}
+
+.fourth img{
+    
+    height: 180px;
+    width: 180px;
+}
+
+.fourth a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+}
+
+.learnmore4{
+    position: absolute;
+    margin-left: 60px;
+    top: 790px;
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.learnmore4 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.learnmore4 a:hover{
+    font-size: 17px;
+}
+
+.fourth img:hover{
+    opacity: 0.5;
+}
+
+.fourth:hover .learnmore4{
+    top: 710px;
+    opacity: 1;
+}
+
+.fourth:hover img{
+    opacity: 0.5;
+}
+
+.fourth h3{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fifth{
+    float: left;
+    height: 170px;
+    width: 170px;
+    margin-top: 24px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.fifth img{
+    height: 170px;
+    width: 170px;
+}
+
+.fifth a{
+    text-decoration: none;
+    color: white;
+}
+
+.learnmore5{
+    position: absolute;
+    margin-left: 45px;
+    top: 790px;
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.learnmore5 a:hover{
+    font-size: 17px;
+}
+
+.fifth img:hover{
+    opacity: 0.5;
+}
+
+.fifth:hover .learnmore5{
+    top: 710px;
+    opacity: 1;
+}
+
+.fifth:hover img{
+    opacity: 0.5;
+}
+
+.fifth h3{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @keyframes transitionIn {
+    from{
+            transform: translateX(80px);
+            opacity: 0;
+        }
+    
+        to{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        
+    }
+
+@keyframes borderSlide {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+    
+@media screen and (max-width: 600px) {
+
+    .nav{
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+    }
+
+    .nav a img{
+        margin-top: 2px;
+        height: 45px;
+        width: 45px;
+        margin-left: 10px;
+    }
+
+    .nav li a{
+        font-size: 20px;
+        float: right;
+    }
+
+    .body h1{
+        margin-left: 180px;
+        margin-right: 180px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .firstitem{
+        margin-left: 0;
+    }
+
+    .firstitem img{
+        height: 130px;
+        width: 130px;
+    }
+
+
+    .seconditem img{
+        height: 130px;
+        width: 130px;
+    }
+
+    .thirditem{
+        margin-left: 108px;
+        margin-bottom: 50px;
+    }
+
+    
+}
