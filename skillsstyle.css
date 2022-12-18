@@ -54,6 +54,7 @@ body{
 .body{
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
+
 }
 
 
@@ -75,6 +76,11 @@ body{
     position: relative;
     font-size: 22px;
     text-align: center;
+    
+}
+
+.body h3{
+    animation: transitionIn 0.75s;
 }
 
 .firstitem{
@@ -462,8 +468,9 @@ body{
 
     .firstitem img{
         height: 130px;
-        width: 130px;
+        width: 100px;
     }
+
 
 
     .seconditem img{
